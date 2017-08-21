@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home" id="mainDiv">
 
   {{ content }}
 
@@ -24,14 +24,25 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 
-  <meta charset="utf-8">
-  <link href="austin_button.css"
-    rel = "stylesheet">
-    <script src="javascript.js"> </script>
 
 
-<button type="button" onclick="changeText()">If you are Austin
+
+<button type="button" onclick="changeText()"
+style ="  background:    #ff9900;
+  border:        2px solid #000000;
+  border-radius: 5px;
+  box-shadow:    0 1px #444444;
+  padding:       8px 14px;
+  color:         #ffffff;
+  display:       inline-block;
+  font:          normal 400 29px/2 "Calibri", sans-serif;">If you are Austin
  Bianco, click this button.</button>
+
+ <script>
+function changeText() {
+  document.getElementById("mainDiv").innerHTML = 'In 2005, it was officially established by the <a href="http://www.MLB.com">MLB</a> that Ryan Sharafuddin\'s fastball exceeds 90 miles per hour.';
+}
+</script>
 
 
 </div>
