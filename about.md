@@ -3,10 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-<head>
-  <link href="austin_button.css"
-    rel = "stylesheet">
-</head>
+
 
 ## <center> Hello World! </center>
 
@@ -18,8 +15,9 @@ This is a work in progress, so while there's very little on it now, it will soon
 
 
 
-<button type="button" onclick="changeText()">If you are Austin
- Bianco, click this button.</button>
+<button type="button" onclick="changeText()">
+ If you are Austin Bianco, click this button.
+ </button>
 
  <script>
  function changeText() {
